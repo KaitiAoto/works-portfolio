@@ -1,0 +1,349 @@
+#==============================================================================
+#
+# 『モデルビューワ』スクリプトファイル [model.txt]
+# Author : AKIRA TANAKA
+#
+#==============================================================================
+SCRIPT			# この行は絶対消さないこと！
+
+#------------------------------------------------------------------------------
+# テクスチャ数
+#------------------------------------------------------------------------------
+NUM_TEXTURE = 6
+
+#------------------------------------------------------------------------------
+# テクスチャファイル名
+#------------------------------------------------------------------------------
+TEXTURE_FILENAME = data/TEXTURE/sky000.jpg			# [0]空テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/mountain000.png		# [1]山テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/field00.jpeg		# [2]地面テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/wall100.jpg			# [3]壁テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/tree000.png			# [4]木テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/grass000.png		# [5]草テクスチャ
+
+#------------------------------------------------------------------------------
+# モデル数
+#------------------------------------------------------------------------------
+NUM_MODEL = 15
+
+#------------------------------------------------------------------------------
+# モデルファイル名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/MODEL/vending_machine00.x			# [0]自販機
+MODEL_FILENAME = data/MODEL/vending_machine01.x			# [1]自販機
+MODEL_FILENAME = data/MODEL/vending_machine02.x			# [2]自販機
+MODEL_FILENAME = data/MODEL/vending_machine03.x			# [3]自販機
+MODEL_FILENAME = data/MODEL/vending_machine04.x			# [4]自販機
+MODEL_FILENAME = data/MODEL/vending_machine05.x			# [5]自販機
+MODEL_FILENAME = data/MODEL/vending_machine06.x			# [6]自販機
+MODEL_FILENAME = data/MODEL/dustbox00.x					# [7]自販機のゴミ箱
+
+MODEL_FILENAME = data/MODEL/convenience_store00.x		# [8]コンビニ
+
+MODEL_FILENAME = data/MODEL/house00.x					# [9]家00
+MODEL_FILENAME = data/MODEL/house01.x					# [10]家01
+MODEL_FILENAME = data/MODEL/mansion00.x					# [11]マンション00
+MODEL_FILENAME = data/MODEL/mansion01.x					# [12]マンション01
+MODEL_FILENAME = data/MODEL/wall00.x					# [13]壁00
+MODEL_FILENAME = data/MODEL/wall01.x					# [14]壁01
+
+
+#------------------------------------------------------------------------------
+# カメラ情報
+#------------------------------------------------------------------------------
+CAMERASET
+	POS = -1500 200 -1280			# 視点
+	REF = -1500 0 -880				# 注視点
+
+END_CAMERASET
+
+#------------------------------------------------------------------------------
+# ライト情報
+#------------------------------------------------------------------------------
+LIGHTSET
+	DIRECTION = 0.22 -0.87 0.44		# 方向
+	DIFFUSE = 1.0 1.0 1.0			# 拡散光
+END_LIGHTSET
+
+LIGHTSET
+	DIRECTION = -0.18 0.88 -0.44	# 方向
+	DIFFUSE = 0.65 0.65 0.65		# 拡散光
+END_LIGHTSET
+
+LIGHTSET
+	DIRECTION = 0.89 -0.11 0.44		# 方向
+	DIFFUSE = 0.15 0.15 0.15		# 拡散光
+END_LIGHTSET
+
+#------------------------------------------------------------------------------
+# 空情報
+#------------------------------------------------------------------------------
+SKYSET
+	TEXTYPE = 0
+	MOVE = 0.00002
+END_SKYSET
+
+#------------------------------------------------------------------------------
+# 山情報
+#------------------------------------------------------------------------------
+MOUNTAINSET
+	TEXTYPE = 1
+END_MOUNTAINSET
+
+#------------------------------------------------------------------------------
+# 地面情報
+#------------------------------------------------------------------------------
+FIELDSET
+	TEXTYPE = 2
+	POS = 0 0 0
+	ROT = 0 0 0
+	BLOCK = 16 16
+	SIZE = 120 120
+END_FIELDSET
+
+FIELDSET
+	TEXTYPE = 2
+	POS = -1247 0 -800
+	ROT = 0 0 0
+	BLOCK = 16 16
+	SIZE = 40 20
+END_FIELDSET
+
+#------------------------------------------------------------------------------
+# 壁情報
+#------------------------------------------------------------------------------
+WALLSET
+	TEXTYPE = 3
+	POS = 0 -80 960
+	ROT = 0 180 0
+	BLOCK = 16 1
+	SIZE = 120 80
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 960 -80 0
+	ROT = 0 270 0
+	BLOCK = 16 1
+	SIZE = 120 80
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 0 -80 -960
+	ROT = 0 0 0
+	BLOCK = 16 1
+	SIZE = 120 80
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = -960 -80 0
+	ROT = 0 90 0
+	BLOCK = 16 1
+	SIZE = 120 80
+END_WALLSET
+
+
+#------------------------------------------------------------------------------
+# 自販機配置情報
+#------------------------------------------------------------------------------
+#赤
+MODELSET
+	TYPE = 0
+	POS = -1500 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#タバコ
+MODELSET
+	TYPE = 1
+	POS = -1450 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#ガチャ
+MODELSET
+	TYPE = 2
+	POS = -1400 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#アイス
+MODELSET
+	TYPE = 3
+	POS = -1350 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#青
+MODELSET
+	TYPE = 4
+	POS = -1300 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#食品
+MODELSET
+	TYPE = 5
+	POS = -1250 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#カード
+MODELSET
+	TYPE = 6
+	POS = -1200 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#ゴミ箱
+MODELSET
+	TYPE = 7
+	POS = -1150 0 -800
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 1
+END_MODELSET
+
+#------------------------------------------------------------------------------
+# 敵拠点配置情報
+#------------------------------------------------------------------------------
+MODELSET
+	TYPE = 8
+    POS = -800 0 -400
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 2
+END_MODELSET
+
+
+#------------------------------------------------------------------------------
+# モデル配置情報
+#------------------------------------------------------------------------------
+#家０
+MODELSET
+	TYPE = 9
+	POS = -300 0 200
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+#家１
+MODELSET
+	TYPE = 10
+	POS = -200 0 100
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 10
+	POS = -1050 0 -700
+	ROT = 0 90 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+#マンション０
+MODELSET
+	TYPE = 11
+	POS = -1300 0 -700
+	ROT = 0 90 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 11
+	POS = -1180 0 -700
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+#マンション１
+MODELSET
+	TYPE = 12
+	POS = -1450 0 -700
+	ROT = 0 180 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+
+#壁１
+MODELSET
+	TYPE = 14
+	POS = -1550 0 -765
+	ROT = 0 90 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 14
+	POS = -1550 0 -895
+	ROT = 0 90 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 14
+	POS = -1480 0 -780
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 14
+	POS = -1350 0 -780
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 14
+	POS = -1220 0 -780
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 14
+	POS = -1090 0 -780
+	ROT = 0 0 0
+	SHADOW = 0
+	OBJECT = 0
+END_MODELSET
+
+#------------------------------------------------------------------------------
+# プレイヤー情報
+#------------------------------------------------------------------------------
+PLAYERSET
+	MOTION_FILENAME = data\\MOTION\\motion_vending.txt
+	POS = -1500 0 -880
+	ROT = 0 0 0
+END_PLAYERSET
+
+END_SCRIPT		# この行は絶対消さないこと！

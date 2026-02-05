@@ -1,0 +1,209 @@
+#==============================================================================
+# 『モデル配置情報』ステージファイル名 [data\STAGE\model01.txt]
+#==============================================================================
+SCRIPT
+
+# テクスチャ数
+NUM_TEXTURE = 3
+
+TEXTURE_FILENAME = data\\TEXTURE\\field03.jpg
+TEXTURE_FILENAME = data\\TEXTURE\\field04.jpg
+TEXTURE_FILENAME = data\\TEXTURE\\field00.jpeg
+
+# モデル数
+NUM_MODEL = 4
+
+MODEL_FILENAME = data\\MODEL\\dustbox00.x
+MODEL_FILENAME = data\\MODEL\\box00.x
+MODEL_FILENAME = data\\MODEL\\bear.x
+MODEL_FILENAME = data\\MODEL\\colorball01.x
+
+#==============================================================================
+# フィールド配置情報
+#==============================================================================
+FIELDSET
+	TEXTYPE = 0
+	POS = 0 0 0
+	ROT = 0 0 0
+	SIZE = 500 500
+END_FIELDSET
+
+FIELDSET
+	TEXTYPE = 1
+	POS = 0 -1000 0
+	ROT = 0 0 0
+	SIZE = 5000 4000
+END_FIELDSET
+
+#==============================================================================
+# 壁配置情報
+#==============================================================================
+WALLSET
+	TEXTYPE = 0
+	POS = 0 -1109 -500
+	ROT = 0 0 0
+	SIZE = 500 1109
+END_WALLSET
+#==============================================================================
+# モデル配置情報
+#==============================================================================
+#-----------------
+# ゴミ箱
+#-----------------
+MODELSET
+	TYPE = 0
+	POS = 800 -780 0
+	ROT = 0 90 0
+	SHADOW = 1
+	OBJECT = 1
+END_MODELSET
+
+MODELSET
+	TYPE = 0
+	POS = -800 -780 0
+	ROT = 0 270 0
+	SHADOW = 1
+	OBJECT = 1
+END_MODELSET
+
+MODELSET
+	TYPE = 0
+	POS = 0 -780 800
+	ROT = 0 0 0
+	SHADOW = 1
+	OBJECT = 1
+END_MODELSET
+
+MODELSET
+	TYPE = 0
+	POS = 0 -780 -800
+	ROT = 0 180 0
+	SHADOW = 1
+	OBJECT = 1
+END_MODELSET
+
+#-----------------
+# ボックス0
+#-----------------
+MODELSET
+	TYPE = 1
+	POS = 2100 -900 1900
+	ROT = 0 45 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 1
+	POS = 1200 -900 2200
+	ROT = 0 -45 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 1
+	POS = -2000 -900 1900
+	ROT = 0 -25 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+#-----------------
+# 熊のぬいぐるみ
+#-----------------
+MODELSET
+	TYPE = 2
+	POS = -1000 -900 1300
+	ROT = 0 -45 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 2
+	POS = 1200 -700 2100
+	ROT = 45 0 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+#-----------------
+# カラーボール
+#-----------------
+MODELSET
+	TYPE = 3
+	POS = 1200 -900 1200
+	ROT = 0 0 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = 1000 -900 1600
+	ROT = 0 90 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = 1600 -900 1400
+	ROT = 0 0 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = 1400 -900 1800
+	ROT = 0 180 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = 2000 -900 1600
+	ROT = 0 270 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = -900 -900 1800
+	ROT = 0 270 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = -1500 -900 1300
+	ROT = 0 25 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = -1200 -900 2200
+	ROT = 0 0 0
+	SHADOW = 1
+	OBJECT = 0
+END_MODELSET
+
+
+
+#==============================================================================
+# プレイヤー情報
+#==============================================================================
+PLAYERSET
+	MOTION_FILENAME = data/MOTION/motionPlayer.txt
+	POS = 0 0 0
+	ROT = 0 0 0
+END_PLAYERSET
+
+END_SCRIPT
